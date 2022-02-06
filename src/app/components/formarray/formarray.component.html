@@ -1,6 +1,6 @@
 <mat-grid-list cols="1" rowHeight="50vh">
   <div [formGroup]="form">
-    <ng-container formArrayName="lessons">
+    <ng-container formArrayName="lessons" >
       <ng-container *ngFor="let lessonForm of lessons.controls; let i = index">
         <div [formGroup]="lessonForm">
         <div>

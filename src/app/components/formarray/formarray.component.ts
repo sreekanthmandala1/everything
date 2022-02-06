@@ -29,6 +29,7 @@ Result:any;
       total : ['2'],
     });
     this.lessons.push(lessonForm);
+     console.log(this.lessons)
   }
 
 }

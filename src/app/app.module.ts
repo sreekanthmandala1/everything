@@ -9,13 +9,19 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FormarrayComponent } from './components/formarray/formarray.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ScrollintoviewComponent } from './components/scrollintoview/scrollintoview.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { BootstrapMediaQueriesComponent } from './components/bootstrap-media-queries/bootstrap-media-queries.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    FormarrayComponent
+    FormarrayComponent,
+    ScrollintoviewComponent,
+    NavbarComponent,
+    BootstrapMediaQueriesComponent
   ],
   imports: [
     BrowserModule,

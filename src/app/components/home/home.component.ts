@@ -15,4 +15,12 @@ export class HomeComponent implements OnInit {
   formarray(){
     this.router.navigate(['/', 'formarray']);
   }
+
+  scrollintoview(){
+    this.router.navigate(['/','scrollintoview'])
+  }
+  bootstrapMediaQueries(){
+    this.router.navigate(['/','bootstrapmediaqueries'])
+
+  }
 }
