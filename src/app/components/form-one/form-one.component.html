@@ -1,0 +1,9 @@
+<h3>Nested FormGroup</h3>
+
+<form [formGroup]="myForm">
+	<label>Name: </label>
+    <input formControlName="name" />
+    <app-form-two [address]="myForm"></app-form-two>
+</form>
+
+<pre>Form Values: {{myForm.value | json}}</pre>

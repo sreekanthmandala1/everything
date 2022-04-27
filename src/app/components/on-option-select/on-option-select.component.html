@@ -1,0 +1,11 @@
+<select class="form-select" ngModel (ngModelChange)="mySelectHandler($event)">
+
+  <option *ngFor="let value of options">{{value.text}}</option>
+
+</select>
+<div>
+  <input class="form-control" *ngIf="onSelectPaticipant" placeholder="Enter Paticipant ID" id="txtparticipant">
+</div>
+<div>
+  <input class="form-control" *ngIf="onSelectIdentifier" placeholder="Enter Identifier ID" id="txtidentifier">
+</div>
