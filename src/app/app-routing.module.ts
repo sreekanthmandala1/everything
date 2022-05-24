@@ -1,3 +1,4 @@
+import { SearchFilterComponent } from './components/search-filter/search-filter.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'formone',component:FormOneComponent},
   {path:'post-api',component:PostApiComponent},
   {path:'crud',component:CrudComponent},
+  {path:'search-filter',component:SearchFilterComponent},
   {path:'not-available',component:Javascript404PageComponent},
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'**',component:NotFoundComponent}

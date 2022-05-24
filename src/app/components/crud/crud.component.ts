@@ -1,34 +1,28 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-crud',
   templateUrl: './crud.component.html',
   styleUrls: ['./crud.component.scss']
 })
 export class CrudComponent implements OnInit {
-  products=[
-    {
-      id:'p1',
-      name:'laptop',
-      price:4500
-    }
-  ]
-  constructor() { }
+
+
+  result :any;
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+
   }
 
-  onAddProduct(id:any,name:any,price:any){
-    this.products.push({
-      id:id.value,
-      name:name.value,
-      price:price.value
-    })
-  }
-
-  onDeleteProduct(id){
-    if(confirm('Do you want to delete this product')){
-      this.products.splice(id,1);
-    }
+  onFetchproducts(){
+    debugger
+    this.http.get("https://samples-c4fa6-default-rtdb.firebaseio.com/",{responseType: 'text'}).subscribe(response => {
+      const data = JSON.stringify(response)
+      console.log(data)
+      this.result = JSON.parse(data)
+    },);
   }
 }

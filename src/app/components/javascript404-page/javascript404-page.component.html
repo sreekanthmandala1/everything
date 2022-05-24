@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <div id="bin">
     <div class="content">
@@ -15,14 +17,15 @@
       <a href="index.html">Back to Home</a>
     </div>
   </div>
-<script type="text/javascript">
-  var container = document.getElementsById('bin');
-  window.onmousemove = function(e){
-    var x =- e.clientX/5;
-    var y =- e.clientY/5;
-    bin.style.backgroundPositionX = x+'px';
-    bin.style.backgroundPositionY = y+'px';
-  }
-</script>
+  <script type="text/javascript">
+    var container = document.getElementsById('bin');
+    window.onmousemove = function (e) {
+      var x = - e.clientX / 5;
+      var y = - e.clientY / 5;
+      bin.style.backgroundPositionX = x + 'px';
+      bin.style.backgroundPositionY = y + 'px';
+    }
+  </script>
 </body>
+
 </html>

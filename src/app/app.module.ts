@@ -16,6 +16,8 @@ import { FormTwoComponent } from './components/form-two/form-two.component';
 import { PostApiComponent } from './components/post-api/post-api.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { Javascript404PageComponent } from './components/javascript404-page/javascript404-page.component';
+import { SearchFilterComponent } from './components/search-filter/search-filter.component';
+import { SearchFilterPipe } from './components/search-filter/searchfilter.pipe';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { Javascript404PageComponent } from './components/javascript404-page/java
     FormTwoComponent,
     PostApiComponent,
     CrudComponent,
-    Javascript404PageComponent
+    Javascript404PageComponent,
+    SearchFilterComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
