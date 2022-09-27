@@ -1,0 +1,33 @@
+<mat-grid-list cols="1" rowHeight="50vh">
+  <div [formGroup]="form">
+    <ng-container formArrayName="lessons">
+      <ng-container *ngFor="let lessonForm of lessons.controls; let i = index">
+        <div [formGroup]="lessonForm">
+        <div>
+          <mat-form-field appearance="fill">
+            <input matInput formControlName="quantity"  >
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="fill">
+            <input matInput formControlName="price" >
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="fill">
+            <input matInput formControlName="total" value="{{(lessons.controls[i].get('quantity').value)*(lessons.controls[i].get('price').value)}}">
+          </mat-form-field>
+        </div>
+      </div>
+      </ng-container>
+    </ng-container>
+
+
+    <div>
+      <button mat-mini-fab (click)="addLesson()">
+        <mat-icon>Add</mat-icon>
+      </button>
+    </div>
+
+  </div>
+</mat-grid-list>

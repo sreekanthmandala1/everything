@@ -1,4 +1,7 @@
+#Angular
+https://github.com/sreekanthmandala1/everything/blob/master/src/assets/angular.png
 # Everything
+1.Formarrays
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
 
